@@ -1,6 +1,6 @@
 @echo off
 REM ============================================================================
-REM Deploy Prompt Engineering .clauderc to JP-EN Translation Project
+REM Deploy Prompt Engineering .clauderc to Target Project
 REM Specialized protocol for LLM instruction schemas and prompt templates
 REM ============================================================================
 
@@ -9,13 +9,23 @@ setlocal enabledelayedexpansion
 echo.
 echo ========================================================
 echo  Prompt Engineering .clauderc Deployment
-echo  Target: JP-EN Translation Project
+echo  Target: Customizable Project Path
 echo ========================================================
 echo.
 
 REM Configuration
 set "SOURCE_CLAUDERC=.clauderc-prompts"
-set "TARGET_PROJECT=C:\Users\Admin\Documents\AI_MODULES\JP-EN"
+
+REM Allow TARGET_PROJECT as command line argument or prompt for input
+if "%~1"=="" (
+    echo Please provide target project path as argument:
+    echo   deploy-prompt-clauderc.bat "C:\path\to\project"
+    echo.
+    set /p TARGET_PROJECT="Enter target project path: "
+) else (
+    set "TARGET_PROJECT=%~1"
+)
+
 set "BACKUP_DIR=%TARGET_PROJECT%\.clauderc-backups"
 
 REM Colors simulation (basic)
@@ -240,7 +250,7 @@ echo.
 
 echo %COLOR_GREEN%Deployment Summary:%COLOR_RESET%
 echo   Project:    %TARGET_PROJECT%
-echo   Protocol:   Prompt Engineering (specialized)
+echo   Protocol:   Prompt Engineering (specialized for LLM schemas)
 echo   Backup:     %BACKUP_DIR%
 echo.
 
@@ -251,18 +261,23 @@ echo.
 
 echo %COLOR_YELLOW%Next Steps:%COLOR_RESET%
 echo.
-echo   1. Open project in VSCode:
+echo   1. Run deployment with target project:
+echo      deploy-prompt-clauderc.bat "C:\path\to\your\project"
+echo      OR
+echo      deploy-prompt-clauderc.bat (will prompt for path)
+echo.
+echo   2. Open project in VSCode:
 echo      code "%TARGET_PROJECT%"
 echo.
-echo   2. Start Claude Code (Ctrl+L)
+echo   3. Start Claude Code (Ctrl+L)
 echo.
-echo   3. Initialize protocol:
+echo   4. Initialize protocol:
 echo      "Read .clauderc and confirm you understand this is a 
 echo       PROMPT ENGINEERING protocol, not a code protocol"
 echo.
-echo   4. Test with master_prompt.xml audit:
-echo      "Read .clauderc, then audit master_prompt.xml for 
-echo       semantic coherence and schema completeness"
+echo   5. Test with schema audit:
+echo      "Read .clauderc, then audit the prompt schema for 
+echo       semantic coherence and instruction clarity"
 echo.
 
 echo %COLOR_GREEN%Expected Claude Behavior:%COLOR_RESET%
