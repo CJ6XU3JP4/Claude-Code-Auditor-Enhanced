@@ -3,10 +3,6 @@ REM ============================================================================
 REM Universal .clauderc Code Change Auditor Protocol Deployment
 REM Works with JavaScript, TypeScript, Python, Rust, Go, Java, C#, or any language
 REM ============================================================================
-REM Version: 2.1 (Fixed timestamp and path handling)
-REM Tested: Claude Haiku 4.5, 99.5% success rate
-REM Value: 75% cost reduction vs Sonnet
-REM ============================================================================
 
 setlocal enabledelayedexpansion
 
@@ -14,7 +10,7 @@ REM ============================================================================
 REM CONFIGURATION
 REM ============================================================================
 
-set "SCRIPT_DIR=%~dp0"
+set "SCRIPT_DIR=%~dp0"S
 set "TARGET_PROJECT=%~1"
 set "FORCE_DEPLOY=%2"
 
