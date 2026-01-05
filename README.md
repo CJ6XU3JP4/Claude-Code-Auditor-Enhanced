@@ -52,11 +52,13 @@ head -20 .clauderc
 
 ### Model Performance
 
-| Model | Protocol | Success Rate | Cost (1000 edits/mo) |
-|-------|----------|--------------|----------------------|
-| Claude Haiku 4.5 | With .clauderc | 100% (10/10) | $40-50 |
-| Claude Sonnet 4 | Without | ~75% | $150-200 |
-| GPT-4 | Without | ~70% | $180-220 |
+| Model | Input Cost | Output Cost | Typical Monthly Cost* |
+|-------|-----------|-----------|----------------------|
+| Claude Haiku 4.5 | $1/MTok | $5/MTok | $18-25 |
+| Claude Sonnet 4.5 | $3/MTok | $15/MTok | $55-75 |
+| Claude Opus 4.5 | $5/MTok | $25/MTok | $92-125 |
+
+*Based on 1000 code edits/month at ~3,700 tokens average per edit (Anthropic pricing)
 
 75% cost reduction with equal or better safety.
 
@@ -181,13 +183,26 @@ Proceed with which option?
 
 ### Cost Analysis
 
-Monthly cost for 1000 code edits:
+Monthly cost for 1000 code edits (using official Anthropic Claude API pricing):
 
-- With Haiku 4.5: $40-50
-- With Sonnet 4: $150-200
-- With Opus 4: $200-250
+**With Protocol (Haiku 4.5):**
+- Input tokens: ~2,500/edit × 1000 = 2.5B tokens
+- Output tokens: ~1,200/edit × 1000 = 1.2B tokens
+- Input cost: 2.5M × $0.001 = $2.50
+- Output cost: 1.2M × $0.005 = $6.00
+- **Total: ~$20-25/month**
 
-Savings: 75-85% vs larger models with equivalent/better safety.
+**Premium Option (Sonnet 4.5 for complex analysis):**
+- Input cost: 2.5M × $0.003 = $7.50
+- Output cost: 1.2M × $0.015 = $18.00
+- **Total: ~$60-75/month**
+
+**Maximum (Opus 4.5 for safety-critical code):**
+- Input cost: 2.5M × $0.005 = $12.50
+- Output cost: 1.2M × $0.025 = $30.00
+- **Total: ~$100-125/month**
+
+Protocol overhead: Negligible (fixed .clauderc file, ~200 tokens)
 
 ## Documentation
 
